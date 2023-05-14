@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+   
+}
+body {
+    background-color: #E0E8FF;
+}
+#card{
+    height: 600px;
+    width: 425px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+#header{
+    flex-basis: 25%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#content, #footer{
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;
+    padding-top: 10px;
+}
+#content{
+    flex-basis: 60%;
+    
+}
+#content h2, #content p{
+    text-align: center;
+}
+#content p{
+    opacity: 60%;
+}
+#footer{
+    flex-basis: 15%;
+    position: relative;
+}
+#box{
+    display: flex;
+    width: 100%;
+    background-color:#F5F7FF;
+    border-radius: 10px;
+}
+#left_box{
+    flex-basis: 25%;
+    text-align: center;
+    position: relative;
+
+
+}
+#iconmusic{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#mid_box{
+    flex-basis: 50%;
+    
+}
+#mid_box h4{
+    margin-bottom: 5px;
+}
+#mid_box p{
+    text-align: left;
+    margin-top: 0px;
+}
+#right_box{
+    flex-basis: 25%;
+    position: relative;
+}
+#right_box a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+#proceed{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #3829e0;
+    font-weight: 700;
+}
+
+#footer button{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border: none;
+    color: #7280a7;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+#proceed:hover{
+    background-color: #3829e0b1;
+    cursor: pointer;
+}
+#footer button:hover{
+    color: rgb(97, 94, 94);
+    cursor: pointer;
+}
+
+@media (max-width:445px) {
+    body{
+        margin: 0px;
+    }
+    #card{
+        width: 100%;
+    }  
+    #box{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    #mid_box h4, #mid_box p{
+        text-align: center;
+    }
+    }
+
+
