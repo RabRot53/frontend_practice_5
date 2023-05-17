@@ -129,6 +129,7 @@ img {
     #box{
         flex-direction: column;
         padding-bottom: 20px;
+        margin-top: 30px;
     }
     #mid_box h4, #mid_box p{
         text-align: center;
